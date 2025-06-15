@@ -1,0 +1,27 @@
+{
+  "name": "green-tmz/posts",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "green-tmz",
+      "email": "green.tmz@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": "^8.0|^8.1|^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Green\\Posts\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Green\\Posts\\Providers\\PostsServiceProvider"
+      ]
+    }
+  }
+}
