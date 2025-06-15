@@ -34,8 +34,8 @@ class PostsServiceProvider extends ServiceProvider
             __DIR__.'/../config/posts.php' => config_path('posts.php'),
         ]);
         if ($this->app->runningInConsole()) {
-            $this->command([
-                PostCommand::class
+            $this->commands([
+                PostCommand::class,
             ]);
         }
     }
